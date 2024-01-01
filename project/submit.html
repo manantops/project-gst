@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>WELCOME</h1>
+
+
+
+    <table border="5" cellpadding="20">
+        <tr>
+            <td>NAME</td>
+
+            <td id="res"></td>
+        </tr>
+
+        <tr>
+            <td>LAST NAME</td>
+
+            <td id="last"></td>
+        </tr>
+
+        <tr>
+            <td>BANK</td>
+
+            <td id="select"></td>
+        </tr>
+    </table>
+
+    <!-- <p id="res"></p> -->
+    <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+
+        var fname = params.get("fname");
+        var lname = params.get("lname");
+        var select = params.get("select");
+
+        var getData = fname;
+        var getData1 = lname;
+        var getData2 = select;
+
+        document.getElementById("last").innerHTML = getData1;
+        document.getElementById("res").innerHTML = getData;
+
+        document.getElementById("select").innerHTML = getData2;
+
+    </script>
+</body>
+
+</html>

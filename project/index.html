@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" action="submit.html">
+        <input type="text" name="fname" id="a">
+
+        <br>
+        <input type="text" name="lname" id="">
+
+        <br>
+
+        <select name="select">
+            <option value="AXIS BANK">AXIS BANK</option>
+            <option value="KOTAK BANK">KOTAK BANK</option>
+            <option value="MAHINDRA">MAHINDRA BANK</option>
+            
+        </select>
+
+        <input type="text" placeholder="ADD BANK HERE">
+        <button>ADD</button>
+
+        <br>
+
+        <button onclick="submit()" type="submit">submit</button>
+    </form>
+
+
+    <script>
+        function submit() {
+            window.open("submit.html")
+        }
+    </script>
+</body>
+
+</html>
